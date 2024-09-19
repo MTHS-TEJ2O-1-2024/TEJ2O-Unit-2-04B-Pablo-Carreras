@@ -14,6 +14,6 @@ display.clear()
 
 
 while True:
-    if button_a.if_PRESSED():
+    if button_a.is_PRESSED():
         random_number = random.randint(1, 6)
         display.show(str(random_number))

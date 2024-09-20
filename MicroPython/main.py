@@ -5,15 +5,13 @@ This module is a Micro:bit MicroPython program
 """
 
 from microbit import *
-import random
 
-#variable for the random number 
-random_number = 0
 
+current_temperautere = temperature
 display.clear()
-
+display.show(Image.Happy)
 
 while True:
-    if button_a.is_PRESSED():
-        random_number = random.randint(1, 6)
-        display.show(str(random_number))
+    if button_a.is_pressed():
+        display.show(str('The tmperature'))
+        current_temperautere = input.temperature(25)

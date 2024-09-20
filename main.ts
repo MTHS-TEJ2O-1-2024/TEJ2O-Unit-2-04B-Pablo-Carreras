@@ -2,15 +2,17 @@
  *
  * Created by: pablo
  * Created on: Sep 2024
- * This program randomly generates a number from 1-6
+ * This program says the temperature to the microbit
 */
 
-// our vaiable for our random number
-let randomNumber: number
+// says the temperature to the microbit 
+let currentTemperature = input.temperature()
 
 basic.clearScreen()
+basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-randomNumber = randint (1, 6)
-basic.showNumber(randomNumber)
+basic.showString('The temperature is')
+currentTemperature = input.temperature()
+basic.showNumber(currentTemperature)
 })

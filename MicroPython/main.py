@@ -13,5 +13,5 @@ display.show(Image.Happy)
 
 while True:
     if button_a.is_pressed():
-        display.show(str('The tmperature'))
+        display.show(str('The tmperature is'))
         current_temperautere = input.temperature(25)

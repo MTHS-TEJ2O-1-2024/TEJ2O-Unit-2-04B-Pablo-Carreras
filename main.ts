@@ -2,10 +2,10 @@
  *
  * Created by: pablo
  * Created on: Sep 2024
- * This program says the temperature from the microbit
+ * This program says the temperature to the microbit
 */
 
-// says the temperature from the microbit 
+// says the temperature to the microbit 
 let currentTemperature = input.temperature()
 
 basic.clearScreen()

@@ -13,5 +13,6 @@ display.show(Image.Happy)
 
 while True:
     if button_a.is_pressed():
-        display.show(str('The tmperature is'))
+        display.show(str('The tmperature is: '))
         current_temperautere = temperature()
+        radio.send(str(temperature()))
